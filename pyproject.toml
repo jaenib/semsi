@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semsi"
+version = "0.1.0"
+description = "Utilities for building semantic similarity matrices from tagged artefacts."
+readme = "README.md"
+authors = [
+    {name = "Semsi Contributors"},
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+semsi = "semsi.cli:main"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7",
+]
