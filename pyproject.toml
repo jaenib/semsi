@@ -20,3 +20,11 @@ semsi = "semsi.cli:main"
 test = [
     "pytest>=7",
 ]
+notebook = [
+    "pandas>=1.5",
+    "ipywidgets>=8",
+]
+ui = [
+    "streamlit>=1.30",
+    "pandas>=1.5",
+]
