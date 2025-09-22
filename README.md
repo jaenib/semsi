@@ -1,13 +1,23 @@
 # Semsi
 
+Semsi is about associating your/any files with eachother through language, 
+about non-linear filehandling,
+about creative group research and avoiding hierarchies,
+about a dropbox that doesn't need to be curated 
+and yet being able to pull meaningful parts from it.
+
+_You shall know a word by the company it keeps (Firth, J. R. 1957:11)_
+
+## Intro
+
 Semsi explores the semantic proximity of tagged artefacts so that files can be
 sorted and browsed by "the company they keep". The original experiment lived in
-Colab notebooks that downloaded GloVe vectors and manually wrangled the
-resulting similarity matrix. This repository now exposes a lightweight Python
-module and command line interface that reproduce the workflow in a more
-reliable and reusable way, without external dependencies.
+Colab notebooks that downloaded GloVe vectors (more on GloVe at the end of this 
+file) and manually wrangled the resulting similarity matrix. This repository 
+now exposes a lightweight Python module and command line interface that reproduce 
+the workflow in a more reliable and reusable way, without external dependencies.
 
-## Modernised workflow
+## Workflow
 
 1. Parse the `contents.txt` file describing your artefacts and their tags.
 2. Convert the tags into TF-IDF embeddings (implemented with the standard
@@ -59,6 +69,16 @@ Run the unit tests with `pytest`:
 ```bash
 pytest
 ```
+
+## GloVe
+
+GloVe, coined from Global Vectors, is a model for distributed word representation. The model is an unsupervised learning algorithm for obtaining vector representations of words. 
+This is achieved by mapping words into a meaningful space where the distance between words is related to semantic similarity. Different concepts show up as quasi linear mappings between words.
+
+
+<img width="400" height="80" alt="image" src="https://github.com/user-attachments/assets/83baceef-ea0e-4605-ac11-3959fbb3e853" />
+<img width="400" height="780" alt="image" src="https://github.com/user-attachments/assets/2fe759a9-87c3-477f-96a2-8e3a1878fb37" />
+## Modernised workflow
 
 ## Legacy notebooks
 
